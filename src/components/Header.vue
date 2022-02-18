@@ -9,7 +9,9 @@
               v-for="(item, index) in itemsNavbar"
               :key="index"
             >
-              <a class="nav-link active" href="#">{{ item }}</a>
+              <a class="nav-link active" href="#"
+                ><strong>{{ item }}</strong></a
+              >
             </li>
           </ul>
         </div>
