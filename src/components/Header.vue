@@ -1,11 +1,6 @@
 <template>
   <header>
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col"></div>
-      </div>
-    </div> -->
-    <div class="topHeader">
+    <div class="topHeader justify-content-around">
       <Navbar :items="itemsNavbar" />
       <img src="../assets/img/dark-logo.png" alt="logo" />
       <div class="info">
@@ -14,12 +9,17 @@
         <input type="text" placeholder="Search" />
       </div>
     </div>
-    <div class="bottomHeader">a</div>
+    <div class="bottomHeader">
+      <h3>Commerce Business</h3>
+      <h1>Distant Mentoring Program</h1>
+      <Bottone testo="Dowload free guidebook" colore="verde" />
+    </div>
   </header>
 </template>
 
 <script>
 import Navbar from "./Navbar.vue";
+import Bottone from "./Bottone.vue";
 export default {
   name: "Header",
   data() {
@@ -28,6 +28,7 @@ export default {
   props: ["itemsNavbar"],
   components: {
     Navbar,
+    Bottone,
   },
 };
 </script>
@@ -37,7 +38,7 @@ export default {
 .topHeader {
   display: flex;
   max-height: 70px;
-  justify-content: space-around;
+  //   justify-content: space-around;
   align-items: center;
   img {
     height: 30px;
@@ -55,5 +56,11 @@ export default {
   background-image: url("../assets/img/home-3-hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 </style>

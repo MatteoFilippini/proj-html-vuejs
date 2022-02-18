@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
@@ -37,12 +37,15 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 #footerNav {
   display: flex;
   flex-direction: column;
 }
 i {
   font-size: 12px;
+}
+a {
+  font-size: 14px;
 }
 </style>
