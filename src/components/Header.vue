@@ -1,31 +1,19 @@
 <template>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li
-              class="nav-item"
-              v-for="(item, index) in itemsNavbar"
-              :key="index"
-            >
-              <a class="nav-link active" href="#"
-                ><strong>{{ item }}</strong></a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <Navbar :items="itemsNavbar" />
   </header>
 </template>
 
 <script>
+import Navbar from "./Navbar.vue";
 export default {
   name: "Header",
   props: ["itemsNavbar"],
+  components: {
+    Navbar,
+  },
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 </style>
