@@ -176,6 +176,28 @@
           </section>
         </div>
       </div>
+      <!-- SUBSCRIBE -->
+      <div class="row">
+        <div class="col">
+          <section id="subscribe" class="text-center mt-5">
+            <h2>Subscribe Newsletters</h2>
+            <div class="m-4 newsText">
+              Enter your email address to register to our newsletter
+              subscription deliveredon a regular basis!
+            </div>
+            <div class="input-group mb-3 justify-content-center">
+              <input
+                type="text"
+                placeholder="Enter your email"
+                aria-describedby="button-addon2"
+                style="width: 500px"
+                class="border-0 bg-light p-2"
+              />
+              <Bottone testo="Subscribe" />
+            </div>
+          </section>
+        </div>
+      </div>
     </div>
   </main>
 </template>
@@ -252,5 +274,10 @@ p {
       color: black;
     }
   }
+}
+
+.newsText {
+  font-weight: 500;
+  color: gray;
 }
 </style>
