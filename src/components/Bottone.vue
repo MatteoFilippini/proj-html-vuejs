@@ -17,6 +17,9 @@ button {
   padding: 12px 35px;
   border-radius: 4px;
   margin-top: 20px;
+
+  background-color: $jungleGreen;
+  color: #fff;
 }
 .white {
   background-color: #fff;

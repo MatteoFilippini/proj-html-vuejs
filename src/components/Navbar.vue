@@ -10,8 +10,8 @@
             :key="index"
           >
             <li class="nav-item">
-              <a class="nav-link active me-3" href="#"
-                ><strong>{{ item.title || item }}</strong>
+              <a class="nav-link me-3" id="title" href="#"
+                >{{ item.title || item }}
                 <i
                   class="fa-solid fa-angle-down ms-1 align-middle"
                   v-if="!item.title"
@@ -19,7 +19,7 @@
               </a>
             </li>
             <li class="nav-item" v-for="(sub, j) in item.subtitle" :key="j">
-              <a class="nav-link text-muted" href="#">
+              <a class="nav-link" id="sub" href="#">
                 {{ sub }}
               </a>
             </li>
@@ -45,7 +45,13 @@ export default {
 i {
   font-size: 12px;
 }
-a {
+
+#title {
   font-size: 14px;
+  font-weight: 600;
+}
+
+#sub {
+  font-size: 12px;
 }
 </style>

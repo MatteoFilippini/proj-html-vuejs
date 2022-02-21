@@ -62,5 +62,9 @@ export default {
   justify-content: center;
   align-items: center;
   color: white;
+  h1 {
+    font-size: 70px;
+    font-weight: 300;
+  }
 }
 </style>
