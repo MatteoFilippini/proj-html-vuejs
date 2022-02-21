@@ -83,7 +83,7 @@
         <div class="col">
           <section id="slider">
             <div class="slider-text text-center mb-5">
-              <p>join maxcoach as best</p>
+              <p>join maxcoach at best</p>
               <h2>Latest Online Courses</h2>
             </div>
             <Slider />

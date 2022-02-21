@@ -1,41 +1,35 @@
 <template>
-  <div
-    id="carouselExampleIndicators"
-    class="carousel slide"
-    data-bs-ride="carousel"
-  >
-    <div class="carousel-inner">
-      <div class="carousel-item active d-flex justify-content-between">
-        <CardSlider v-for="(card, index) in cards" :key="index" :card="card" />
+  <div>
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner d-flex">
+        <div class="carousel-item d-flex">
+          <div v-for="(card, index) in cards" :key="index">
+            <CardSlider :card="card" />
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="carousel-indicators p-3">
-      <button
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide-to="0"
-        class="active"
-        aria-current="true"
-        aria-label="Slide 1"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide-to="1"
-        aria-label="Slide 2"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide-to="2"
-        aria-label="Slide 3"
-      ></button>
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          :data-bs-slide-to="index"
+          aria-current="true"
+          aria-label="Slide 1"
+          class="active"
+          v-for="(card, index) in 3"
+          :key="index"
+        ></button>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import CardSlider from "./CardSlider";
+import CardSlider from "./CardSlider.vue";
 export default {
   name: "Slider",
   components: {
@@ -65,6 +59,34 @@ export default {
           students: "62",
           url: "../assets/img/stock-full-hd-04-480x298.jpg",
         },
+        {
+          price: "$9,00",
+          desc: "Open Programming courses for Everyonr: Python",
+          lessons: "17",
+          students: "62",
+          url: "../assets/img/stock-full-hd-04-480x298.jpg",
+        },
+        {
+          price: "$22,00",
+          desc: "Open Programming courses for Everyonr: Python",
+          lessons: "17",
+          students: "62",
+          url: "../assets/img/stock-full-hd-04-480x298.jpg",
+        },
+        {
+          price: "$191,00",
+          desc: "Open Programming courses for Everyonr: Python",
+          lessons: "17",
+          students: "62",
+          url: "../assets/img/stock-full-hd-04-480x298.jpg",
+        },
+        {
+          price: "$19s,00",
+          desc: "Open Programming courses for Everyonr: Python",
+          lessons: "17",
+          students: "62",
+          url: "../assets/img/stock-full-hd-04-480x298.jpg",
+        },
       ],
     };
   },
@@ -76,11 +98,12 @@ export default {
   position: relative;
   align-items: center;
   button {
-    background-color: black;
+    background-color: red;
     border-radius: 50%;
     height: 10px;
     width: 10px;
     &.active {
+      background-color: black;
       height: 15px;
       width: 15px;
     }
