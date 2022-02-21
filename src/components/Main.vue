@@ -1,9 +1,10 @@
 <template>
   <main>
     <div class="container">
+      <!-- CULTURE -->
       <div class="row">
         <div class="col">
-          <section id="culture">
+          <section class="culture">
             <div class="card border border-0 w-100">
               <div class="row justify-content-center flex-row-reverse">
                 <div class="col-6">
@@ -79,6 +80,7 @@
           </section>
         </div>
       </div>
+      <!-- SLIDER -->
       <div class="row">
         <div class="col">
           <section id="slider">
@@ -94,16 +96,127 @@
           </section>
         </div>
       </div>
+      <!-- CULTURE -->
+      <div class="row">
+        <div class="col">
+          <div class="row">
+            <div class="col">
+              <section class="culture">
+                <div class="card border border-0 w-100">
+                  <div class="row justify-content-center flex-row-reverse">
+                    <div class="col-6">
+                      <img
+                        src="../assets/img/stock-full-hd-10-ohki1ayywq3cqutettrncduujpoaorifqu4relt2ts.jpg"
+                        class="img-fluid rounded-start"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-6">
+                      <div class="card-body p-3" style="max-width: 300px">
+                        <p>TESTIMONIALS</p>
+                        <h2 class="card-title">Why Do People *Hearts* Us?</h2>
+                        <div class="card-text">
+                          Speeking for verbals od our service quality? Find them
+                          here. Everything is transparent and straightforward
+                          your sense of justification.
+                        </div>
+                        <div class="card-text mt-3">
+                          <small class="text-muted">View All</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border border-0 w-100">
+                  <div class="row justify-content-center">
+                    <div class="col-6">
+                      <img
+                        src="../assets/img/stock-full-hd-11-670x450.jpg"
+                        class="img-fluid rounded-start"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-6">
+                      <div class="card-body" style="max-width: 300px">
+                        <p>everythins in maxcoach</p>
+                        <h2 class="card-title">We're here to Transorm You!</h2>
+                        <div class="card-text">
+                          As learners, people can enjoy great companionship from
+                          MaxCoach mentors and educator. We can help you develop
+                          and grow at your best.
+                        </div>
+                        <div class="card-text mt-3">
+                          <Bottone testo="Get Free Guide" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- BLOG -->
+      <div class="row">
+        <div class="col">
+          <section id="blog">
+            <div class="blogTitle text-center">
+              <p>read for more joyment</p>
+              <h2>Latest From Our Blog</h2>
+            </div>
+
+            <div class="blogCards d-flex justify-content-between mt-5">
+              <CardBlog
+                v-for="(card, index) in cardsBlog"
+                :key="index"
+                :card="card"
+              />
+            </div>
+          </section>
+        </div>
+      </div>
     </div>
   </main>
 </template>
 
 <script>
 import Slider from "./Slider.vue";
+import Bottone from "./Bottone.vue";
+import CardBlog from "./CardBlog.vue";
 export default {
   name: "Main",
   components: {
     Slider,
+    Bottone,
+    CardBlog,
+  },
+  data() {
+    return {
+      cardsBlog: [
+        {
+          person: "artist",
+          desc: "Brush Strokes Energize Trees in Paintings",
+          date: "May,15,2020",
+          view: "688",
+          url: "",
+        },
+        {
+          person: "artist",
+          desc: "Poket-Sized Notebooks Hold Miniature Paintings",
+          date: "May,15,2020",
+          view: "603",
+          url: "",
+        },
+        {
+          person: "artist",
+          desc: "Connection Between Self-Portraits and Identify",
+          date: "May,15,2020",
+          view: "397",
+          url: "",
+        },
+      ],
+    };
   },
 };
 </script>
@@ -113,7 +226,7 @@ p {
   text-transform: uppercase;
   font-size: 12px;
 }
-#culture {
+.culture {
   margin: 100px 0;
   h2 {
     font-weight: 600;
