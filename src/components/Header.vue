@@ -16,6 +16,12 @@
       <h3>Commerce Business</h3>
       <h1>Distant Mentoring Program</h1>
       <Bottone testo="Dowload free guidebook" colore="verde" />
+      <div class="icons">
+        <i class="fa-solid fa-chart-bar"></i>
+        <i class="fa-solid fa-compass"></i>
+        <i class="fa-solid fa-book"></i
+        ><i class="fa-solid fa-cart-shopping"></i>
+      </div>
     </div>
   </header>
 </template>
@@ -64,9 +70,28 @@ export default {
   justify-content: center;
   align-items: center;
   color: white;
+
+  position: relative;
   h1 {
     font-size: 70px;
     font-weight: 300;
+  }
+  .icons {
+    height: 130px;
+    width: 40px;
+    background-color: white;
+    border-radius: 5px 0 0 5px;
+    color: black;
+    padding: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    position: absolute;
+    top: 20%;
+    right: 0;
   }
 }
 </style>
