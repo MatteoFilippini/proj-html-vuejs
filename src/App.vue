@@ -1,8 +1,8 @@
 <template>
   <div>
     <Header :itemsNavbar="headerNavbar" />
-    <Main />
-    <Footer :itemsNavbar="footerNavbar" color="whiye" />
+    <Main :cardsBlog="cardsBlog" />
+    <Footer :itemsNavbar="footerNavbar" color="white" />
   </div>
 </template>
 
@@ -48,6 +48,29 @@ export default {
             "Privacy policy",
             "Terms of service",
           ],
+        },
+      ],
+      cardsBlog: [
+        {
+          person: "artist",
+          desc: "Brush Strokes Energize Trees in Paintings",
+          date: "May,15,2020",
+          view: "688",
+          url: "",
+        },
+        {
+          person: "artist",
+          desc: "Poket-Sized Notebooks Hold Miniature Paintings",
+          date: "May,15,2020",
+          view: "603",
+          url: "",
+        },
+        {
+          person: "artist",
+          desc: "Connection Between Self-Portraits and Identify",
+          date: "May,15,2020",
+          view: "397",
+          url: "",
         },
       ],
     };

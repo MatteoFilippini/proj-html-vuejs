@@ -7,18 +7,20 @@
           <section class="culture">
             <div class="card border border-0 w-100">
               <div class="row justify-content-center flex-row-reverse">
-                <div class="col-6">
-                  <img
-                    src="../assets/img/stock-full-hd-10-ohki1ayywq3cqutettrncduujpoaorifqu4relt2ts.jpg"
-                    class="img-fluid rounded-start"
-                    alt="..."
-                  />
+                <div class="col">
+                  <figure class="m-0">
+                    <img
+                      src="../assets/img/stock-full-hd-10-ohki1ayywq3cqutettrncduujpoaorifqu4relt2ts.jpg"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </figure>
                 </div>
-                <div class="col-6">
-                  <div class="card-body p-3" style="max-width: 300px">
-                    <p>everythins in maxchoach</p>
+                <div class="col">
+                  <div class="card-body p-3" style="width: 300px">
+                    <p>everythins in <span>MaxChoach</span></p>
                     <h2 class="card-title">
-                      Learn about our work culture at maxcoach
+                      Learn about our <span> Work Culture</span> at maxcoach
                     </h2>
                     <div class="card-text">
                       Spend some time to visit out website or head office and
@@ -27,9 +29,13 @@
                       beginning of each month.
                     </div>
                     <div class="card-text mt-3">
-                      <small class="text-muted"
-                        >Have questions? Get Free Guide</small
-                      >
+                      <small
+                        >Have questions?
+                        <span
+                          >Get Free Guide
+                          <i class="fa-solid fa-arrow-right-long"></i
+                        ></span>
+                      </small>
                     </div>
                   </div>
                 </div>
@@ -51,27 +57,37 @@
             </div>
             <div class="card border border-0 w-100">
               <div class="row justify-content-center">
-                <div class="col-6">
-                  <img
-                    src="../assets/img/stock-full-hd-11-670x450.jpg"
-                    class="img-fluid rounded-start"
-                    alt="..."
-                  />
+                <div class="col">
+                  <figure class="m-0" style="position: relative">
+                    <img
+                      src="../assets/img/stock-full-hd-11-670x450.jpg"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                    <img
+                      src="../assets/img/icon-youtube-play.png"
+                      alt=""
+                      id="ytIcon"
+                    />
+                  </figure>
                 </div>
-                <div class="col-6">
-                  <div class="card-body" style="max-width: 300px">
+                <div class="col">
+                  <div class="card-body p-3" style="max-width: 300px">
                     <p>how we work</p>
                     <h2 class="card-title">
-                      Upgrade your skills upgrade your life
+                      Upgrade Your Skills <span>Upgrade Your Life</span>
                     </h2>
                     <div class="card-text">
                       Opening up more opportunities in front of you to get the
-                      ticket to more enjoyable door in life. Getting equipment
-                      with new skills for new sets of insights into carrer.
+                      ticket to more enjoyable door in life. Gettin gequipped
+                      with new skills for new sets of insights into your career.
                       MaxCoach accompany learners in every stage of learning.
                     </div>
                     <div class="card-text mt-3">
-                      <small class="text-muted">Download free guidebook</small>
+                      <small style="color: black"
+                        >Download free guidebook
+                        <i class="fa-solid fa-arrow-right-long"></i
+                      ></small>
                     </div>
                   </div>
                 </div>
@@ -99,62 +115,70 @@
       <!-- CULTURE -->
       <div class="row">
         <div class="col">
-          <div class="row">
-            <div class="col">
-              <section class="culture">
-                <div class="card border border-0 w-100">
-                  <div class="row justify-content-center flex-row-reverse">
-                    <div class="col-6">
-                      <img
-                        src="../assets/img/stock-full-hd-10-ohki1ayywq3cqutettrncduujpoaorifqu4relt2ts.jpg"
-                        class="img-fluid rounded-start"
-                        alt="..."
-                      />
+          <section class="culture">
+            <div class="card border border-0 w-100">
+              <div class="row justify-content-center flex-row-reverse">
+                <div class="col">
+                  <figure class="m-0">
+                    <img
+                      src="../assets/img/stock-full-hd-10-ohki1ayywq3cqutettrncduujpoaorifqu4relt2ts.jpg"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </figure>
+                </div>
+                <div class="col">
+                  <div class="card-body p-3" style="width: 300px">
+                    <p>testimonial</p>
+                    <h2 class="card-title">
+                      Why do people <span> *Hearts*</span> Us?
+                    </h2>
+                    <div class="card-text">
+                      Seeking for verbals of our service quality? Find them
+                      here. Everything is transparent and straightforward for
+                      your sense of justification.
                     </div>
-                    <div class="col-6">
-                      <div class="card-body p-3" style="max-width: 300px">
-                        <p>TESTIMONIALS</p>
-                        <h2 class="card-title">Why Do People *Hearts* Us?</h2>
-                        <div class="card-text">
-                          Speeking for verbals od our service quality? Find them
-                          here. Everything is transparent and straightforward
-                          your sense of justification.
-                        </div>
-                        <div class="card-text mt-3">
-                          <small class="text-muted">View All</small>
-                        </div>
-                      </div>
+                    <div class="card-text mt-3">
+                      <small style="color: black"
+                        >View all <i class="fa-solid fa-arrow-right-long"></i
+                      ></small>
                     </div>
                   </div>
                 </div>
-                <div class="card border border-0 w-100">
-                  <div class="row justify-content-center">
-                    <div class="col-6">
-                      <img
-                        src="../assets/img/stock-full-hd-11-670x450.jpg"
-                        class="img-fluid rounded-start"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="col-6">
-                      <div class="card-body" style="max-width: 300px">
-                        <p>everythins in maxcoach</p>
-                        <h2 class="card-title">We're here to Transorm You!</h2>
-                        <div class="card-text">
-                          As learners, people can enjoy great companionship from
-                          MaxCoach mentors and educator. We can help you develop
-                          and grow at your best.
-                        </div>
-                        <div class="card-text mt-3">
-                          <Bottone testo="Get Free Guide" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
+              </div>
             </div>
-          </div>
+            <div class="card border border-0 w-100" style="margin: 100px 0">
+              <div class="row justify-content-center">
+                <div class="col">
+                  <figure class="m-0" style="position: relative">
+                    <img
+                      src="../assets/img/home-3-team-image-300x278.png"
+                      class="img-fluid rounded-start"
+                      alt="..."
+                      style="width: auto"
+                    />
+                  </figure>
+                </div>
+                <div class="col">
+                  <div class="card-body p-3" style="max-width: 300px">
+                    <p>everythins in <span>MaxChoach</span></p>
+                    <h2 class="card-title">
+                      We're Here To <span>Transform</span> You!
+                    </h2>
+                    <div class="card-text">
+                      As learners, people can enjoy great companionship from
+                      MaxCoach mentors and educators. We can help you develop
+                      and grow at your best.
+                    </div>
+                    <div class="card-text mt-3">
+                      <Bottone testo="Gee free Guide" />
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
       <!-- BLOG -->
@@ -213,52 +237,59 @@ export default {
     Bottone,
     CardBlog,
   },
-  data() {
-    return {
-      cardsBlog: [
-        {
-          person: "artist",
-          desc: "Brush Strokes Energize Trees in Paintings",
-          date: "May,15,2020",
-          view: "688",
-          url: "",
-        },
-        {
-          person: "artist",
-          desc: "Poket-Sized Notebooks Hold Miniature Paintings",
-          date: "May,15,2020",
-          view: "603",
-          url: "",
-        },
-        {
-          person: "artist",
-          desc: "Connection Between Self-Portraits and Identify",
-          date: "May,15,2020",
-          view: "397",
-          url: "",
-        },
-      ],
-    };
-  },
+  props: ["cardsBlog"],
 };
 </script>
 
 <style lang="scss" scoped>
-p {
-  text-transform: uppercase;
-  font-size: 12px;
-}
+@import "../assets/scss/-var.scss";
+
 .culture {
   margin: 100px 0;
+  p {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: $delta;
+    font-weight: 500;
+    span {
+      color: $stormDust;
+    }
+  }
   h2 {
     font-weight: 600;
+    span {
+      color: $mountainMeadow;
+      font-weight: 100;
+    }
   }
   img {
     width: 100%;
+    height: 400px;
   }
   .stats {
     display: flex;
     justify-content: space-around;
+    padding: 50px 0;
+    .stat {
+      font-size: 50px;
+      font-weight: 600;
+      color: $mountainMeadow;
+      p {
+        color: $stormDust;
+      }
+    }
+  }
+  .card-text {
+    color: $delta;
+    font-size: 14px;
+  }
+  #ytIcon {
+    height: 40px;
+    width: 55px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
