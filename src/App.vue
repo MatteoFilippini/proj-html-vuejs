@@ -2,7 +2,7 @@
   <div>
     <Header :itemsNavbar="headerNavbar" />
     <Main />
-    <Footer :itemsNavbar="footerNavbar" />
+    <Footer :itemsNavbar="footerNavbar" color="whiye" />
   </div>
 </template>
 

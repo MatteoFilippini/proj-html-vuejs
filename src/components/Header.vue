@@ -1,8 +1,11 @@
 <template>
   <header>
-    <div class="topHeader justify-content-around">
+    <div class="topHeader justify-content-around align-items-center">
       <Navbar :items="itemsNavbar" />
-      <img src="../assets/img/dark-logo.png" alt="logo" />
+      <figure class="m-0">
+        <img src="../assets/img/dark-logo.png" alt="logo" />
+      </figure>
+
       <div class="info">
         <i class="fa-solid fa-cart-shopping"></i>
         <i class="fa-regular fa-circle-user"></i>
