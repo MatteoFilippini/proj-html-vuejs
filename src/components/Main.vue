@@ -187,9 +187,8 @@
           <section id="blog">
             <div class="blogTitle text-center">
               <p>read for more joyment</p>
-              <h2>Latest From Our Blog</h2>
+              <h2>Latest From <span>Our Blog</span></h2>
             </div>
-
             <div class="blogCards d-flex justify-content-between mt-5">
               <CardBlog
                 v-for="(card, index) in cardsBlog"
@@ -203,13 +202,13 @@
       <!-- SUBSCRIBE -->
       <div class="row">
         <div class="col">
-          <section id="subscribe" class="text-center mt-5">
-            <h2>Subscribe Newsletters</h2>
+          <section id="subscribe" class="text-center" style="margin: 50px 0">
+            <h2>Subscribe <span>Newsletters</span></h2>
             <div class="m-4 newsText">
               Enter your email address to register to our newsletter
               subscription deliveredon a regular basis!
             </div>
-            <div class="input-group mb-3 justify-content-center">
+            <div class="input-group justify-content-center">
               <input
                 type="text"
                 placeholder="Enter your email"
@@ -243,25 +242,27 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/scss/-var.scss";
+p {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: $delta;
+  font-weight: 500;
+  span {
+    color: $stormDust;
+  }
+}
+
+h2 {
+  font-weight: 600;
+  span {
+    color: $mountainMeadow;
+    font-weight: 100;
+  }
+}
 
 .culture {
   margin: 100px 0;
-  p {
-    text-transform: uppercase;
-    font-size: 12px;
-    color: $delta;
-    font-weight: 500;
-    span {
-      color: $stormDust;
-    }
-  }
-  h2 {
-    font-weight: 600;
-    span {
-      color: $mountainMeadow;
-      font-weight: 100;
-    }
-  }
+
   img {
     width: 100%;
     height: 400px;
@@ -309,6 +310,6 @@ export default {
 
 .newsText {
   font-weight: 500;
-  color: gray;
+  color: $stormDust;
 }
 </style>

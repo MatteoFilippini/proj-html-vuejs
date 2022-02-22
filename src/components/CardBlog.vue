@@ -6,13 +6,15 @@
       alt="..."
     />
     <div class="card-body">
-      <h5 class="card-title text-muted">{{ card.person }}</h5>
+      <h5 class="card-title">{{ card.person }}</h5>
       <h4 class="card-text">
         {{ card.desc }}
       </h4>
-      <div class="card-stats mt-4 text-muted">
-        <span class="me-5">{{ card.date }} </span>
-        <span>{{ card.view }} View</span>
+      <div class="card-stats mt-4">
+        <span class="me-5"
+          ><i class="fa-regular fa-calendar me-2"></i>{{ card.date }}
+        </span>
+        <span><i class="fa-regular fa-eye me-2"></i>{{ card.view }} View</span>
       </div>
     </div>
   </div>
@@ -26,11 +28,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/scss/-var.scss";
 .card {
   height: 450px;
   width: 400px;
   .card-title {
     text-transform: uppercase;
+    font-size: 14px;
+  }
+  .card-stats {
+    color: $delta;
     font-size: 14px;
   }
 }
