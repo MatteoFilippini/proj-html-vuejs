@@ -41,7 +41,6 @@ export default {
 .topHeader {
   display: flex;
   max-height: 70px;
-  //   justify-content: space-around;
   align-items: center;
   img {
     height: 30px;
@@ -58,7 +57,7 @@ export default {
   height: 800px;
   background-image: url("../assets/img/home-3-hero-bg.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 
   display: flex;
   flex-direction: column;

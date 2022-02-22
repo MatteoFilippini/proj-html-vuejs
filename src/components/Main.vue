@@ -99,15 +99,18 @@
       <!-- SLIDER -->
       <div class="row">
         <div class="col">
-          <section id="slider">
+          <section id="SectionSlider">
             <div class="slider-text text-center mb-5">
               <p>join maxcoach at best</p>
-              <h2>Latest Online Courses</h2>
+              <h2>Latest Online <span>Courses</span></h2>
             </div>
             <Slider />
             <div class="slider-desc text-center">
               Control your personal preference settings to get notified about
-              apporpriate courses. <span>View all courses</span>
+              apporpriate courses.
+              <span style="color: black; font-weight: 600"
+                >View all courses <i class="fa-solid fa-arrow-right-long"></i
+              ></span>
             </div>
           </section>
         </div>
@@ -294,18 +297,9 @@ h2 {
   }
 }
 
-#slider {
-  background-color: lightgray;
-  .slider-desc {
-    margin: 0 auto;
-    width: 600px;
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: gray;
-    span {
-      color: black;
-    }
-  }
+.slider-desc {
+  margin: 0 auto;
+  color: $delta;
 }
 
 .newsText {

@@ -1,18 +1,20 @@
 <template>
-  <div class="card me-5">
-    <img
-      src="../assets/img/stock-full-hd-10-ohki1ayywq3cqutettrncduujpoaorifqu4relt2ts.jpg"
-      class="card-img-top"
-      alt="..."
-    />
+  <div class="card border-0">
+    <img :src="imageSrc" class="card-img-top" alt="..." />
     <div class="card-body">
       <h5 class="card-title">{{ card.price }}</h5>
       <h4 class="card-text">
         {{ card.desc }}
       </h4>
       <div class="card-stats mt-4">
-        <span class="me-5">{{ card.lessons }} Lessons</span>
-        <span>{{ card.students }} Students</span>
+        <span class="me-5"
+          ><i class="fa-regular fa-file-lines me-2"></i
+          >{{ card.lessons }} Lessons</span
+        >
+        <span
+          ><i class="fa-regular fa-user me-2"></i
+          >{{ card.students }} Students</span
+        >
       </div>
     </div>
   </div>
@@ -22,6 +24,11 @@
 export default {
   name: "CardSlider",
   props: ["card"],
+  computed: {
+    imageSrc() {
+      return require(`../assets/img/${this.card.url}`);
+    },
+  },
 };
 </script>
 
@@ -30,7 +37,7 @@ export default {
 
 .card {
   height: 450px;
-  width: 400px;
+  width: 370px;
 }
 
 .card-title {
